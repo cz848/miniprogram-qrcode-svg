@@ -1,0 +1,36 @@
+{
+  "name": "miniprogram-qrcode-svg",
+  "version": "0.1.0",
+  "description": "A QRCode generator use javascript in weixin miniprogram",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "lint": "eslint **/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cz848/miniprogram-qrcode-svg.git"
+  },
+  "keywords": [
+    "QRCode",
+    "svg",
+    "javascript",
+    "weixin",
+    "miniprogram"
+  ],
+  "author": "Tyler Chao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cz848/miniprogram-qrcode-svg/issues"
+  },
+  "homepage": "https://github.com/cz848/miniprogram-qrcode-svg#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-promise": "^4.2.1"
+  }
+}
