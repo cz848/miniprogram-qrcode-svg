@@ -1,9 +1,9 @@
-可用于现代浏览器及小程序环境，用来生成svg格式的二维码。
+可用于现代浏览器及小程序环境，用来生成svg格式的二维码，输出为base64格式。
 
 ### 用法：
 
 ```javascript
-var qrcode = new QRCode({
+var qrcode = QRCodeSVG({
   content: "http://github.com/",
   padding: 4,
   width: 256,
@@ -11,10 +11,6 @@ var qrcode = new QRCode({
   color: "#000000",
   background: "#ffffff",
   ecl: "M",
-});
-qrcode.save("sample.svg", function(error) {
-  if (error) throw error;
-  console.log("Done!");
 });
 ```
 
