@@ -3,4 +3,4 @@
  */
 import QRCode from './lib/QRCode';
 
-export default (content, options) => new QRCode(content, options).toDataURL();
+export default (content, options) => new QRCode(content, options);
