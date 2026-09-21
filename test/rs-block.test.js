@@ -60,6 +60,12 @@ test('v15 的 H 等级分块', async t => {
   });
 });
 
+test('越界参数的分块查询应抛出错误', () => {
+  assert.throws(() => QRRSBlock.getRSBlocks(0, QRErrorCorrectLevel.L), /bad rs block/);
+  assert.throws(() => QRRSBlock.getRSBlocks(41, QRErrorCorrectLevel.L), /bad rs block/);
+  assert.throws(() => QRRSBlock.getRSBlocks(1, 4), /bad rs block/);
+});
+
 test('ecl 为 H 时的容量回归', async t => {
   await t.test('此前会溢出的长度区间现可正常产出并落在预期版本', () => {
     const cases = [[191, 73], [192, 77], [200, 77], [217, 77], [218, 81]];
