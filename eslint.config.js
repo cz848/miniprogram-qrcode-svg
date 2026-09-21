@@ -80,6 +80,8 @@ export default [
       // 以下为import模块规则
       // 相对导入必须写出扩展名，Node 的 ESM 解析不支持省略
       'import-x/extensions': ['error', 'ignorePackages', { js: 'always' }],
+      // 关闭「把 ../index.js 简写为 ..」的行为：Node ESM 不支持目录导入，会抛 ERR_UNSUPPORTED_DIR_IMPORT
+      'import-x/no-useless-path-segments': ['error', { noUselessIndex: false, commonjs: true }],
       // 确保导入的文件/模块可以解析为本地文件系统上的模块
       'import-x/no-unresolved': 'off',
     },
