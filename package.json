@@ -1,6 +1,6 @@
 {
   "name": "miniprogram-qrcode-svg",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A QRCode generator use javascript in weixin miniprogram",
   "type": "module",
   "main": "index.js",
